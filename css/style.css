@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/background_fit.png);
+    background-size: auto;
+}
+
+main {
+    background-color: rgba(24, 23, 24, 0.566);
+    width: 100vw;
+}
+
+/* --------------- HEADER --------------- */
+
+header section {
+    background-color: #000000;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+
+.effect_h {
+    background-image: linear-gradient(to bottom, #000000, rgba(128, 128, 128, 0));
+    width: 100vw;
+    height: 30px;
+}
+
+header section div {
+    display: flex;
+    /* background-color: aqua; */
+}
+
+.logo_head {
+    object-fit: contain;
+    width: 50px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+#logo_deco {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    margin-top: 10%;
+    color: white;
+}
+
+H1:hover {
+    color: yellow;
+    transition-duration: 0.7s;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+#search_input {
+    border: #000000 solid 1px;
+}
+
+#search_input:active{
+    width: 300px;
+}
+
+.lupa {
+    width: 15px;
+    fill: white;
+    background-color: #00000000;
+}
+/*--------------------------- MAIN --------------------------------- */
+/* publicidad principal */
+#contenedor_publicidad {
+    width: 100vw;
+    height: 50%;
+    background-color: #4b4b4b;
+}
+
+#publicidad {
+    object-fit: contain;
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+/* ---------------------- PRODUCTOS POPULARES------------------------ */
+#contenedor_hdos {
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+}
+
+h2 {
+    background-color: #000000;
+    width: 100vw;
+    color: white;
+    font-size: 25px;
+}
+
+h2:hover {
+    cursor: default;
+}
+
+#effect_x {
+    background-image: linear-gradient(to bottom, #000000, rgba(128, 128, 128, 0));
+    width: 100vw;
+    height: 50px;
+    margin-top: -10px;
+}
+/* ---------------- CONTENEDORES PRODUCTOS ------------- */
+.productos_lista {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.content_producto {
+    background: radial-gradient(circle, rgba(59, 59, 59, 0.877), #000000);
+    width: 20%;
+    height: 300px;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+.content_producto a h3 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    font-style: normal;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.content_producto a h3:hover {
+    color: yellow;
+    transition-duration: 0.7s;
+}
+.content_producto a {
+    text-decoration: none;
+}
+.content_producto p {
+    color: white;
+}
+.content_producto p:hover {
+    cursor: default;
+}
+figure {
+    background-color: #4b4b4b;
+    width: 90%;
+    height: 170px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.content_producto figure img {
+    width: 70%;
+    height: 170px;
+    /* border-radius: 5px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content_producto p {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 15px;
+}
+
+.content_producto a {
+    margin-left: 15px;
+}
+/* ----------FORMULARIO REGISTRO --------- */
+.container_form {
+    width: 70vh;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.container_form div {
+    border: #000000 solid 1px;
+    margin-bottom: 10px;
+}
+
+.container_form div p {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.texto_inline {
+    display: inline-block;
+}
+
+/* ---- Catalogo estilo ---- */
+#contenedor_catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 400px 400px 400px;
+    grid-template-areas:
+        "nav nav nav nav"
+        "uno dos tres publicidad"
+        "cuatro cinco seis publicidad"
+        "siete ocho nueve .";
+    gap: 10px 20px;
+}
+
+#form_catalogo {
+    grid-area: nav;
+    background-color: #0000009e;
+}
+
+#uno {
+    grid-area: uno;
+}
+
+#dos {
+    grid-area: dos;
+}
+
+#tres {
+    grid-area: tres;
+}
+
+#cuatro {
+    grid-area: cuatro;
+}
+
+#cinco {
+    grid-area: cinco;
+}
+
+#seis {
+    grid-area: seis;
+}
+
+#siete {
+    grid-area: siete;
+}
+
+#ocho {
+    grid-area: ocho;
+}
+
+#nueve {
+    grid-area: nueve;
+}
+
+#publicidad_dos {
+    grid-area: publicidad;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #444444;
+}
+
+#imagen_publicidad {
+    width: 100%;
+    object-fit: contain;
+}
+
+.producto_cont {
+    background: radial-gradient(circle, rgba(59, 59, 59, 0.877), #000000);
+    border-radius: 5px;
+}
+
+.producto_cont a img {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.cont_image {
+    display: inline-block;
+    background-color: #3d3d3d;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.text_cont {
+    /* border: #000000 solid 3px; */
+    height: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 60px;
+    padding-top: 10px;
+}
+
+.button_carrito {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 4px;
+    background-color: #4b4b4ba5;
+    color: white;
+}
+
+.button_carrito:hover {
+    background-color: #4b4b4b;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.button_carrito:active {
+    background-color: #3d3d3d;
+}
+
+.text_cont a {
+    text-decoration: none;
+    background-color: aqua;
+}
+
+.text_cont a h3 {
+    color: white;
+}
+/* --------------------------------- FOOTER ------------------------------------ */
+#effect {
+    margin-bottom: -2px;
+    width: 100vw;
+    height: 100px;
+    background-image: linear-gradient(to top, #000000, rgba(24, 23, 24, 0.566));
+}
+
+#info {
+    width: 100vw;
+    height: 70px;
+    background-color: #000000;
+}
+
+#info div {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logos_redes svg {
+    width: 30%;
+    fill: white;
+}
+
+.logos_redes svg:hover {
+    fill: yellow;
+    transition-duration: 0.7s;
+}
+#CARRUSEL {
+    display: none;
+}
+.bars_responsive {
+    display: none;
+}
+/* ------------------------RESPONSIVE---------------------- */
+
+@media (max-width: 600px) {
+/* ------- HEADER------ */
+    nav ul {
+        display: none;
+    }
+    header section {
+        height: 65px;
+    }
+    .logo_head {
+        margin-top: 8px;
+    }
+    h1:hover {
+        color: white;
+        transition-duration: 0ms;
+    }
+/* ----PUBLICIDAD---- */
+    #publicidad {
+        width: 100%;
+    }
+/* ---CONTENEDORES PRODUCTOS CARRUSEL--- */
+    .productos_lista {
+        display: none;
+    }
+    #CARRUSEL {
+        display: flex;
+    }
+    .content_producto_carrusel {
+        width: 100vw;
+    }
+    .content_producto_carrusel figure {
+        height: 30%;
+        background-image: url(../img/background_fit.png);
+        width: 100%;
+        border-radius: 0%;
+    }
+    .content_producto_carrusel figure img {
+        width: 60%;
+        display: block;
+        margin: auto;
+        z-index: 0;
+    }
+    .content_producto_carrusel a {
+        text-decoration: none;
+        color: white;
+    }
+    .button_compra_carrusel {
+        width: 200px;
+        border-radius: 5px;
+        background-color: #3d3d3d;
+        height: 30px;
+    }
+    .content_producto_carrusel p {
+        color: white;
+    }
+    .bars_responsive {
+        display: flex;
+        width: 50px;
+    }
+    .bars_responsive svg {
+        stroke: white;
+        color: white;
+    }
+}
