@@ -89,7 +89,7 @@ nav ul li a:hover {
     border: #000000 solid 1px;
 }
 
-#search_input:active{
+#search_input:active {
     width: 300px;
 }
 
@@ -98,6 +98,7 @@ nav ul li a:hover {
     fill: white;
     background-color: #00000000;
 }
+
 /*--------------------------- MAIN --------------------------------- */
 /* publicidad principal */
 #contenedor_publicidad {
@@ -112,6 +113,7 @@ nav ul li a:hover {
     display: block;
     margin: auto;
 }
+
 /* ---------------------- PRODUCTOS POPULARES------------------------ */
 #contenedor_hdos {
     width: 100vw;
@@ -136,6 +138,7 @@ h2:hover {
     height: 50px;
     margin-top: -10px;
 }
+
 /* ---------------- CONTENEDORES PRODUCTOS ------------- */
 .productos_lista {
     display: flex;
@@ -165,15 +168,19 @@ h2:hover {
     color: yellow;
     transition-duration: 0.7s;
 }
+
 .content_producto a {
     text-decoration: none;
 }
+
 .content_producto p {
     color: white;
 }
+
 .content_producto p:hover {
     cursor: default;
 }
+
 figure {
     background-color: #4b4b4b;
     width: 90%;
@@ -204,6 +211,7 @@ figure {
 .content_producto a {
     margin-left: 15px;
 }
+
 /* ----------FORMULARIO REGISTRO --------- */
 
 .container_form {
@@ -235,6 +243,7 @@ figure {
 .grey {
     color: gray;
 }
+
 .grey:hover {
     color: gray;
     cursor: default;
@@ -256,9 +265,11 @@ figure {
     cursor: pointer;
     transition-duration: 0.3s;
 }
+
 .button_form:active {
     background-color: #3d3d3d;
 }
+
 /* ---- Catalogo estilo ---- */
 #contenedor_catalogo {
     display: grid;
@@ -370,6 +381,7 @@ figure {
     cursor: pointer;
     transition-duration: 0.3s;
 }
+
 .button_carrito:active {
     background-color: #3d3d3d;
 }
@@ -382,6 +394,7 @@ figure {
 .text_cont a h3 {
     color: white;
 }
+
 /* --------------------------------- FOOTER ------------------------------------ */
 #effect {
     margin-bottom: -2px;
@@ -412,78 +425,149 @@ figure {
     fill: yellow;
     transition-duration: 0.7s;
 }
+
 #CARRUSEL {
     display: none;
 }
+
 .bars_responsive {
     display: none;
 }
+
 /* ------------------------RESPONSIVE---------------------- */
 
 @media (max-width: 600px) {
-/* ------- HEADER------ */
+
+    /* ------- HEADER------ */
     nav ul {
         display: none;
     }
+
+    .header_canvas {
+        background-color: #000000;
+    }
+
+    h5 {
+        color: white;
+        font-family: "Fjalla One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.3rem;
+
+    }
+
+    ul li a {
+        border: none;
+        /* background-color: #000000; */
+        color: white;
+    }
+
+    ul li a:hover {
+        color: white;
+    }
+
+
+    #search_input:active {
+        width: auto;
+    }
+    .reg_res {
+        color: rgb(132, 132, 132);
+    }
+
+    .reg_res:active {
+        color: rgb(132, 132, 132);
+    }
+
+    .reg_res:hover {
+        color: rgb(132, 132, 132);
+    }
+    .order_nav_res {
+        background-color: #000000;
+    }
+
+    .order_nav_res ul {
+        display: block;
+        margin-left: -20px;
+    }
+
     header section {
         height: 65px;
         display: flex;
-        /* justify-content: space-between; */
     }
+
     .logo_head {
         margin-top: 8px;
     }
+
     h1:hover {
         color: white;
         transition-duration: 0ms;
     }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .bars_responsive {
         display: flex;
         width: 50px;
         fill: white;
     }
+
     .bars_responsive svg {
         fill: white;
     }
-/* ----PUBLICIDAD---- */
+
+    /* ----PUBLICIDAD---- */
     #contenedor_publicidad {
         width: 100vw;
     }
+
     #publicidad {
         width: 100vw;
     }
-/* ---CONTENEDORES PRODUCTOS CARRUSEL--- */
+
+    /* ---CONTENEDORES PRODUCTOS CARRUSEL--- */
     .productos_lista {
         display: none;
     }
+
     #CARRUSEL {
         display: flex;
     }
+
     .content_producto_carrusel {
         width: 100vw;
+        height: 500px;
     }
+
     .content_producto_carrusel figure {
-        height: 30%;
+        height: 325px;
         background-image: url(../img/background_fit.png);
         width: 100%;
         border-radius: 0%;
     }
+
     .content_producto_carrusel figure img {
         width: 60%;
+        height: 100%;
         display: block;
         margin: auto;
-        z-index: 0;
     }
+
     .content_producto_carrusel a {
         text-decoration: none;
         color: white;
     }
+
     .button_compra_carrusel {
         width: 200px;
         border-radius: 5px;
         background-color: #3d3d3d;
         height: 30px;
     }
+
     .content_producto_carrusel p {
         color: white;
     }
@@ -494,6 +578,7 @@ figure {
         margin-left: 0px;
         border-radius: 0%;
     }
+
     .cont_padre_form {
         width: 100vw;
     }
