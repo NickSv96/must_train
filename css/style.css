@@ -440,6 +440,7 @@ figure {
     .bars_responsive {
         display: flex;
         width: 50px;
+        fill: white;
     }
     .bars_responsive svg {
         fill: white;
