@@ -205,27 +205,60 @@ figure {
     margin-left: 15px;
 }
 /* ----------FORMULARIO REGISTRO --------- */
+
 .container_form {
-    width: 70vh;
+    width: 100vh;
+    height: 550px;
+    padding-top: 10px;
     margin-top: 20px;
     margin-left: 20px;
+    background: radial-gradient(circle, rgba(59, 59, 59, 0.877), #000000);
+    border-radius: 5px;
 }
 
 .container_form div {
-    border: #000000 solid 1px;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .container_form div p {
     font-family: "PT Sans", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
+    color: white;
 }
 
 .texto_inline {
     display: inline-block;
 }
 
+.grey {
+    color: gray;
+}
+.grey:hover {
+    color: gray;
+    cursor: default;
+}
+
+.button_form {
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 4px;
+    background-color: #4b4b4ba5;
+    color: white;
+}
+
+.button_form:hover {
+    background-color: #4b4b4b;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.button_form:active {
+    background-color: #3d3d3d;
+}
 /* ---- Catalogo estilo ---- */
 #contenedor_catalogo {
     display: grid;
@@ -394,6 +427,8 @@ figure {
     }
     header section {
         height: 65px;
+        display: flex;
+        /* justify-content: space-between; */
     }
     .logo_head {
         margin-top: 8px;
@@ -402,9 +437,19 @@ figure {
         color: white;
         transition-duration: 0ms;
     }
+    .bars_responsive {
+        display: flex;
+        width: 50px;
+    }
+    .bars_responsive svg {
+        fill: white;
+    }
 /* ----PUBLICIDAD---- */
+    #contenedor_publicidad {
+        width: 100vw;
+    }
     #publicidad {
-        width: 100%;
+        width: 100vw;
     }
 /* ---CONTENEDORES PRODUCTOS CARRUSEL--- */
     .productos_lista {
@@ -441,13 +486,14 @@ figure {
     .content_producto_carrusel p {
         color: white;
     }
-    .bars_responsive {
-        display: flex;
-        width: 50px;
-        justify-content: end;
-        border: chartreuse 2px solid;
+
+    /* ------------------ REGISTRO --------------- */
+    .container_form {
+        width: 100vw;
+        margin-left: 0px;
+        border-radius: 0%;
     }
-    .bars_responsive svg {
-        fill: white;
+    .cont_padre_form {
+        width: 100vw;
     }
 }
