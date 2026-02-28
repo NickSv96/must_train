@@ -286,6 +286,20 @@ figure {
 #form_catalogo {
     grid-area: nav;
     background-color: #0000009e;
+    padding-top: 5px;
+}
+
+#form_catalogo ul {
+    display: inline-block;
+    width: 90vw;
+}
+
+.cont_form_cat {
+    height: 60px;
+}
+
+.cont_form_cat input {
+    width: 90%;
 }
 
 #uno {
@@ -363,6 +377,10 @@ figure {
     margin-right: 20px;
     margin-top: 60px;
     padding-top: 10px;
+}
+
+.text_cont p {
+    color: white;
 }
 
 .button_carrito {
@@ -466,10 +484,16 @@ figure {
         color: white;
     }
 
+    .button_close {
+        color: white;
+        font-size: 30px;
+        font-weight: 500;
+    }
 
     #search_input:active {
         width: auto;
     }
+
     .reg_res {
         color: rgb(132, 132, 132);
     }
@@ -481,6 +505,7 @@ figure {
     .reg_res:hover {
         color: rgb(132, 132, 132);
     }
+
     .order_nav_res {
         background-color: #000000;
     }
@@ -582,6 +607,41 @@ figure {
     .cont_padre_form {
         width: 100vw;
     }
+
     /* ----------------catalogo--------------- */
-    
+    #contenedor_catalogo {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nav"
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco"
+            "seis"
+            "siete"
+            "ocho"
+            "nueve";
+    }
+
+    #publicidad_dos {
+        display: none;
+    }
+
+    .producto_cont {
+        height: 220px;
+        border-radius: 0%;
+        display: flex;
+    }
+
+    .cont_image {
+        width: 50%;
+        height: 180px;
+        padding-top: 20px;
+    }
+
+    .cont_image img {
+        height: 90%;
+    }
 }
