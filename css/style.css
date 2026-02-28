@@ -644,4 +644,7 @@ figure {
     .cont_image img {
         height: 90%;
     }
+    #form_catalogo {
+        height: 55px;
+    }
 }
