@@ -358,12 +358,15 @@ figure {
 
 .producto_cont a img {
     width: 50%;
+    height: 100%;
     display: block;
     margin: auto;
 }
 
 .cont_image {
     display: inline-block;
+    width: 85%;
+    height: 170px;
     background-color: #3d3d3d;
     margin-top: 20px;
     margin-left: 20px;
