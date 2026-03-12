@@ -1,0 +1,35 @@
+@use "./variables" as*;
+
+footer {
+    #effect {
+        margin-bottom: -2px;
+        width: 100vw;
+        height: 100px;
+        background-image: linear-gradient(to top, $color_primario, rgba(24, 23, 24, 0.566));
+    }
+
+    #info {
+        width: 100vw;
+        height: 70px;
+        background-color: $color_primario;
+
+        div {
+            width: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            .logos_redes {
+                svg {
+                    width: 30%;
+                    fill: $color_terciario;
+                }
+            }
+
+            .logos_redes svg:hover {
+                fill: yellow;
+                transition-duration: 0.7s;
+            }
+        }
+    }
+}

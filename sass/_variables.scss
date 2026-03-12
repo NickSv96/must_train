@@ -1,0 +1,34 @@
+$color_primario: #000000;
+$color_secundario: rgb(255, 255, 0);
+$color_terciario: #ffff;
+
+@mixin font_family ($font-family, $font-weight, $font-style, $font-size) {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        // -webkit-transform: scale(0.5);
+        // transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        // -webkit-transform: scale(0.5);
+        // transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}

@@ -1,0 +1,578 @@
+@-webkit-keyframes scale-up-center {
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes scale-up-center {
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/background_fit.png);
+  background-size: auto;
+}
+body header section {
+  background-color: #000000;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+}
+body header section div {
+  display: flex;
+}
+body header section div a .logo_head {
+  object-fit: contain;
+  width: 50px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+body header section div a h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  margin-top: 10%;
+  color: white;
+}
+body header section div #logo_deco {
+  text-decoration: none;
+}
+body header section div a H1:hover {
+  color: rgb(255, 255, 0);
+  transition-duration: 1s;
+}
+body header section nav {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  padding: 5px;
+}
+body header section nav ul {
+  list-style: none;
+  display: flex;
+}
+body header section nav ul li {
+  margin-top: 7px;
+  margin-left: 10px;
+}
+body header section nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+body header section nav ul li a:hover {
+  color: rgb(255, 255, 0);
+}
+body header section nav ul li .grey {
+  color: gray;
+}
+body header section nav ul li .grey:hover {
+  color: gray;
+  cursor: default;
+}
+body header section nav ul li #search_input {
+  border: #000000 solid 1px;
+}
+body header section nav ul li #search_input:active {
+  width: 300px;
+}
+body header section nav ul li #search-form #search_input {
+  width: 170px;
+  border: #000000 solid 1px;
+  transition: all ease-in-out 0.6s;
+  outline: none;
+}
+body header section nav ul li #search-form #search_input:focus {
+  width: 300px;
+}
+body header section nav ul li #search-form .lupa {
+  width: 15px;
+  fill: white;
+  background-color: #000000;
+}
+body header section nav .bars_responsive {
+  display: none;
+}
+body header .effect_h {
+  background-image: linear-gradient(to bottom, #000000, rgba(128, 128, 128, 0));
+  width: 100vw;
+  height: 30px;
+}
+
+main {
+  background-color: rgba(24, 23, 24, 0.566);
+  width: 100vw;
+}
+main #contenedor_publicidad {
+  width: 100vw;
+  height: 50%;
+  background-color: #4b4b4b;
+}
+main #contenedor_publicidad a #publicidad {
+  object-fit: contain;
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+main #contenedor_hdos {
+  width: 100vw;
+  text-align: center;
+  margin: auto;
+}
+main #contenedor_hdos h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  background-color: #000000;
+  width: 100vw;
+  height: 30px;
+  padding-top: 5px;
+  color: white;
+}
+main #contenedor_hdos h2:hover {
+  cursor: default;
+}
+main #effect_x {
+  background-image: linear-gradient(to bottom, #000000, rgba(128, 128, 128, 0));
+  width: 100vw;
+  height: 50px;
+  margin-top: -10px;
+}
+main .productos_lista {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+main .productos_lista .content_producto {
+  background: radial-gradient(circle, rgba(59, 59, 59, 0.877), #000000);
+  width: 20%;
+  height: 300px;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+main .productos_lista .content_producto a {
+  text-decoration: none;
+  margin-left: 15px;
+}
+main .productos_lista .content_producto a h3 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+main .productos_lista .content_producto a h3:hover {
+  color: yellow;
+  transition-duration: 0.7s;
+}
+main .productos_lista .content_producto a .button_carrito {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 4px;
+  background-color: rgba(75, 75, 75, 0.6470588235);
+  color: white;
+}
+main .productos_lista .content_producto a .button_carrito:hover {
+  background-color: #4b4b4b;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+main .productos_lista .content_producto a .button_carrito:active {
+  background-color: #3d3d3d;
+}
+main .productos_lista .content_producto p {
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 15px;
+}
+main .productos_lista .content_producto p:hover {
+  cursor: default;
+}
+main .productos_lista .content_producto figure {
+  background-color: #4b4b4b;
+  width: 90%;
+  height: 170px;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  overflow: hidden;
+}
+main .productos_lista .content_producto figure img {
+  width: 70%;
+  height: 170px;
+  /* border-radius: 5px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .productos_lista .content_producto figure img:hover {
+  -webkit-animation: scale-up-center 1s ease-in-out both;
+  animation: scale-up-center 1s ease-in-out both;
+}
+main #CARRUSEL {
+  display: none;
+}
+
+.container_form {
+  width: 100vh;
+  height: 550px;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: radial-gradient(circle, rgba(59, 59, 59, 0.877), #000000);
+  border-radius: 5px;
+}
+.container_form div {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.container_form div p {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+.container_form div .texto_inline {
+  display: inline-block;
+}
+.container_form div .button_form {
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 4px;
+  background-color: rgba(75, 75, 75, 0.6470588235);
+  color: white;
+}
+.container_form div .button_form:hover {
+  background-color: #4b4b4b;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.container_form div .button_form:active {
+  background-color: #3d3d3d;
+}
+
+#contenedor_catalogo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 400px 400px 400px;
+  grid-template-areas: "nav nav nav nav" "uno dos tres publicidad" "cuatro cinco seis publicidad" "siete ocho nueve .";
+  gap: 10px 20px;
+}
+#contenedor_catalogo #form_catalogo {
+  grid-area: nav;
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  padding-top: 5px;
+}
+#contenedor_catalogo #form_catalogo ul {
+  display: inline-block;
+  width: 90vw;
+}
+#contenedor_catalogo #form_catalogo ul .cont_form_cat {
+  height: 60px;
+}
+#contenedor_catalogo #form_catalogo ul .cont_form_cat input {
+  width: 90%;
+}
+#contenedor_catalogo #uno {
+  grid-area: uno;
+}
+#contenedor_catalogo #dos {
+  grid-area: dos;
+}
+#contenedor_catalogo #tres {
+  grid-area: tres;
+}
+#contenedor_catalogo #cuatro {
+  grid-area: cuatro;
+}
+#contenedor_catalogo #cinco {
+  grid-area: cinco;
+}
+#contenedor_catalogo #seis {
+  grid-area: seis;
+}
+#contenedor_catalogo #siete {
+  grid-area: siete;
+}
+#contenedor_catalogo #ocho {
+  grid-area: ocho;
+}
+#contenedor_catalogo #nueve {
+  grid-area: nueve;
+}
+#contenedor_catalogo .producto_cont {
+  background: radial-gradient(circle, rgba(59, 59, 59, 0.877), #000000);
+  border-radius: 5px;
+}
+#contenedor_catalogo .producto_cont .cont_image {
+  display: inline-block;
+  width: 85%;
+  height: 170px;
+  background-color: #3d3d3d;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+#contenedor_catalogo .producto_cont .cont_image img {
+  width: 50%;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+#contenedor_catalogo .producto_cont .cont_image img:hover {
+  -webkit-animation: scale-up-center 1s ease-in-out both;
+  animation: scale-up-center 1s ease-in-out both;
+}
+#contenedor_catalogo .producto_cont .text_cont {
+  /* border: #000000 solid 3px; */
+  height: 90px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 60px;
+  padding-top: 10px;
+}
+#contenedor_catalogo .producto_cont .text_cont p {
+  color: white;
+}
+#contenedor_catalogo .producto_cont .text_cont .button_carrito {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 4px;
+  background-color: rgba(75, 75, 75, 0.6470588235);
+  color: white;
+}
+#contenedor_catalogo .producto_cont .text_cont .button_carrito:hover {
+  background-color: #4b4b4b;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+#contenedor_catalogo .producto_cont .text_cont .button_carrito:active {
+  background-color: #3d3d3d;
+}
+#contenedor_catalogo .producto_cont .text_cont a {
+  text-decoration: none;
+}
+#contenedor_catalogo .producto_cont .text_cont a h3 {
+  color: white;
+}
+#contenedor_catalogo #publicidad_dos {
+  grid-area: publicidad;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #444444;
+}
+#contenedor_catalogo #publicidad_dos a #imagen_publicidad {
+  width: 100%;
+  object-fit: contain;
+}
+
+footer #effect {
+  margin-bottom: -2px;
+  width: 100vw;
+  height: 100px;
+  background-image: linear-gradient(to top, #000000, rgba(24, 23, 24, 0.566));
+}
+footer #info {
+  width: 100vw;
+  height: 70px;
+  background-color: #000000;
+}
+footer #info div {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer #info div .logos_redes svg {
+  width: 30%;
+  fill: white;
+}
+footer #info div .logos_redes svg:hover {
+  fill: yellow;
+  transition-duration: 0.7s;
+}
+
+@media (max-width: 600px) {
+  body header section {
+    height: 65px;
+    display: flex;
+  }
+  body header section div a .logo_head {
+    width: 67px;
+  }
+  body header section div .logo_deco h1:hover {
+    color: white;
+    transition-duration: 0ms;
+  }
+  body header section nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  body header section nav ul {
+    display: none;
+  }
+  body header section nav .bars_responsive {
+    display: flex;
+    width: 50px;
+    fill: white;
+  }
+  body header section nav .bars_responsive svg {
+    fill: white;
+  }
+  body header section nav div .header_canvas {
+    background-color: #000000;
+  }
+  body header section nav div .header_canvas h5 {
+    color: white;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+  }
+  body header section nav div .header_canvas .button_close {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  body header section nav div .order_nav_res {
+    background-color: #000000;
+  }
+  body header section nav div .order_nav_res ul {
+    display: block;
+    margin-left: -20px;
+  }
+  body header section nav div .order_nav_res ul li a {
+    border: none;
+    /* background-color: #000000; */
+    color: white;
+  }
+  body header section nav div .order_nav_res ul li a:hover {
+    color: white;
+  }
+  body header section nav div .order_nav_res ul li #search-form #search_input:focus {
+    width: 170px;
+  }
+  body header section nav div .order_nav_res ul li .reg_res {
+    color: rgb(132, 132, 132);
+  }
+  body header section nav div .order_nav_res ul li .reg_res:active {
+    color: rgb(132, 132, 132);
+  }
+  body header section nav div .order_nav_res ul li .reg_res:hover {
+    color: rgb(132, 132, 132);
+  }
+  body main #contenedor_publicidad {
+    width: 100vw;
+  }
+  body main #contenedor_publicidad a #publicidad {
+    width: 100vw;
+  }
+  body main .productos_lista {
+    display: none;
+  }
+  body main #CARRUSEL {
+    display: flex;
+  }
+  body main #CARRUSEL div div div .content_producto_carrusel {
+    width: 100vw;
+    height: 500px;
+  }
+  body main #CARRUSEL div div div .content_producto_carrusel figure {
+    height: 325px;
+    background-image: url(../img/background_fit.png);
+    width: 100%;
+    border-radius: 0%;
+  }
+  body main #CARRUSEL div div div .content_producto_carrusel figure img {
+    width: 60%;
+    height: 100%;
+    display: block;
+    margin: auto;
+  }
+  body main #CARRUSEL div div div .content_producto_carrusel a {
+    text-decoration: none;
+    color: white;
+  }
+  body main #CARRUSEL div div div .content_producto_carrusel a .button_compra_carrusel {
+    width: 200px;
+    border-radius: 5px;
+    background-color: #3d3d3d;
+    height: 30px;
+  }
+  body main #CARRUSEL div div div .content_producto_carrusel p {
+    color: white;
+  }
+  body main section .cont_padre_form {
+    width: 100vw;
+  }
+  body main section .cont_padre_form .container_form {
+    width: 100vw;
+    margin-left: 0px;
+    border-radius: 0%;
+  }
+  body main #contenedor_catalogo {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho" "nueve";
+  }
+  body main #contenedor_catalogo #form_catalogo {
+    height: 40px;
+    width: 100vw;
+    padding-top: 6px;
+    text-align: center;
+  }
+  body main #contenedor_catalogo .producto_cont {
+    height: 220px;
+    border-radius: 0%;
+    display: flex;
+  }
+  body main #contenedor_catalogo .producto_cont .cont_image {
+    width: 50%;
+    height: 180px;
+    padding-top: 20px;
+  }
+  body main #contenedor_catalogo .producto_cont .cont_image img {
+    height: 90%;
+  }
+  body main #contenedor_catalogo .producto_cont .text_cont {
+    width: 50%;
+    height: 190px;
+    margin-top: 10px;
+  }
+  body main #contenedor_catalogo .producto_cont .text_cont .button_carrito {
+    width: 100%;
+    height: 70px;
+    margin-top: 50px;
+  }
+  body main #contenedor_catalogo #publicidad_dos {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

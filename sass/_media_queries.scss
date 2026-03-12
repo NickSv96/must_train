@@ -1,0 +1,241 @@
+@use "./variables" as*;
+
+@media (max-width: 600px) {
+    body {
+        header {
+            section {
+                height: 65px;
+                display: flex;
+
+                div {
+                    a {
+                        .logo_head {
+                            width: 67px;
+                        }
+                    }
+
+                    .logo_deco {
+                        h1:hover {
+                            color: white;
+                            transition-duration: 0ms;
+                        }
+                    }
+
+                }
+
+                nav {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    ul {
+                        display: none;
+                    }
+
+                    .bars_responsive {
+                        display: flex;
+                        width: 50px;
+                        fill: white;
+
+                        svg {
+                            fill: white;
+                        }
+                    }
+
+                    div {
+                        .header_canvas {
+                            background-color: #000000;
+
+                            h5 {
+                                color: white;
+                                font-family: "Fjalla One", sans-serif;
+                                font-weight: 400;
+                                font-style: normal;
+                                font-size: 1.3rem;
+
+                            }
+
+                            .button_close {
+                                color: white;
+                                font-size: 30px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .order_nav_res {
+                            background-color: #000000;
+
+                            ul {
+                                display: block;
+                                margin-left: -20px;
+
+                                li {
+                                    a {
+                                        border: none;
+                                        /* background-color: #000000; */
+                                        color: white;
+                                    }
+
+                                    a:hover {
+                                        color: white;
+                                    }
+
+                                    #search-form {
+                                        #search_input:focus {
+                                            width: 170px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            ul {
+                                li {
+                                    .reg_res {
+                                        color: rgb(132, 132, 132);
+                                    }
+
+                                    .reg_res:active {
+                                        color: rgb(132, 132, 132);
+                                    }
+
+                                    .reg_res:hover {
+                                        color: rgb(132, 132, 132);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            #contenedor_publicidad {
+                width: 100vw;
+
+                a {
+                    #publicidad {
+                        width: 100vw;
+                    }
+                }
+            }
+
+            .productos_lista {
+                display: none;
+            }
+
+            #CARRUSEL {
+                display: flex;
+
+                div {
+                    div {
+                        div {
+                            .content_producto_carrusel {
+                                width: 100vw;
+                                height: 500px;
+
+                                figure {
+                                    height: 325px;
+                                    background-image: url(../img/background_fit.png);
+                                    width: 100%;
+                                    border-radius: 0%;
+
+                                    img {
+                                        width: 60%;
+                                        height: 100%;
+                                        display: block;
+                                        margin: auto;
+                                    }
+                                }
+
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+
+                                    .button_compra_carrusel {
+                                        width: 200px;
+                                        border-radius: 5px;
+                                        background-color: #3d3d3d;
+                                        height: 30px;
+                                    }
+                                }
+
+                                p {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            section {
+                .cont_padre_form {
+                    width: 100vw;
+
+                    .container_form {
+                        width: 100vw;
+                        margin-left: 0px;
+                        border-radius: 0%;
+                    }
+                }
+            }
+
+            #contenedor_catalogo {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "nav"
+                    "uno"
+                    "dos"
+                    "tres"
+                    "cuatro"
+                    "cinco"
+                    "seis"
+                    "siete"
+                    "ocho"
+                    "nueve";
+
+                #form_catalogo {
+                    height: 40px;
+                    width: 100vw;
+                    padding-top: 6px;
+                    text-align: center;
+                }
+
+                .producto_cont {
+                    height: 220px;
+                    border-radius: 0%;
+                    display: flex;
+
+                    .cont_image {
+                        width: 50%;
+                        height: 180px;
+                        padding-top: 20px;
+
+                        img {
+                            height: 90%;
+                        }
+                    }
+
+                    .text_cont {
+                        width: 50%;
+                        height: 190px;
+                        margin-top: 10px;
+
+                        .button_carrito {
+                            width: 100%;
+                            height: 70px;
+                            margin-top: 50px;
+                        }
+                    }
+
+
+                }
+
+                #publicidad_dos {
+                    display: none;
+                }
+            }
+        }
+    }
+}

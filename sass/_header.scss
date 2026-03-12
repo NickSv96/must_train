@@ -1,0 +1,123 @@
+@use "./variables" as*;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/background_fit.png);
+    background-size: auto;
+
+    header {
+        section {
+            background-color: $color_primario;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            height: 45px;
+
+            div {
+                display: flex;
+
+                a .logo_head {
+                    object-fit: contain;
+                    width: 50px;
+                    padding-left: 5px;
+                    cursor: pointer;
+                }
+
+                a h1 {
+                    font-family: "Fjalla One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 1.3rem;
+                    margin-top: 10%;
+                    color: $color_terciario;
+                }
+
+                #logo_deco {
+                    text-decoration: none;
+                }
+
+                a H1:hover {
+                    color: $color_secundario;
+                    transition-duration: 1s;
+                }
+            }
+
+            nav {
+                display: flex;
+                width: 80%;
+                justify-content: space-between;
+                padding: 5px;
+
+                ul {
+                    list-style: none;
+                    display: flex;
+
+                    li {
+                        margin-top: 7px;
+                        margin-left: 10px;
+
+                        a {
+                            text-decoration: none;
+                            color: $color_terciario;
+                        }
+
+                        a:hover {
+                            color: $color_secundario;
+                        }
+
+                        .grey {
+                            color: gray;
+                        }
+
+                        .grey:hover {
+                            color: gray;
+                            cursor: default;
+                        }
+
+                        #search_input {
+                            border: $color_primario solid 1px;
+                        }
+
+                        #search_input:active {
+                            width: 300px;
+                        }
+
+                        #search-form {
+                            #search_input {
+                                width: 170px;
+                                border: $color_primario solid 1px;
+                                transition: all ease-in-out 0.6s;
+                                outline: none;
+                            }
+
+                            #search_input:focus {
+                                width: 300px;
+                            }
+
+                            .lupa {
+                                width: 15px;
+                                fill: $color_terciario;
+                                background-color: $color_primario;
+                            }
+                        }
+                    }
+                }
+
+                .bars_responsive {
+                    display: none;
+                }
+
+            }
+        }
+
+        .effect_h {
+            background-image: linear-gradient(to bottom, $color_primario, rgba(128, 128, 128, 0));
+            width: 100vw;
+            height: 30px;
+        }
+    }
+}

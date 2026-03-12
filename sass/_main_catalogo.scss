@@ -1,0 +1,152 @@
+@use "./variables" as*;
+
+#contenedor_catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 400px 400px 400px;
+    grid-template-areas:
+        "nav nav nav nav"
+        "uno dos tres publicidad"
+        "cuatro cinco seis publicidad"
+        "siete ocho nueve .";
+    gap: 10px 20px;
+
+    #form_catalogo {
+        grid-area: nav;
+        background-color: #0000009e;
+        padding-top: 5px;
+
+        ul {
+            display: inline-block;
+            width: 90vw;
+
+            .cont_form_cat {
+                height: 60px;
+            }
+
+            .cont_form_cat input {
+                width: 90%;
+            }
+        }
+    }
+
+    #uno {
+        grid-area: uno;
+    }
+
+    #dos {
+        grid-area: dos;
+    }
+
+    #tres {
+        grid-area: tres;
+    }
+
+    #cuatro {
+        grid-area: cuatro;
+    }
+
+    #cinco {
+        grid-area: cinco;
+    }
+
+    #seis {
+        grid-area: seis;
+    }
+
+    #siete {
+        grid-area: siete;
+    }
+
+    #ocho {
+        grid-area: ocho;
+    }
+
+    #nueve {
+        grid-area: nueve;
+    }
+
+    .producto_cont {
+        background: radial-gradient(circle, rgba(59, 59, 59, 0.877), #000000);
+        border-radius: 5px;
+
+        .cont_image {
+            display: inline-block;
+            width: 85%;
+            height: 170px;
+            background-color: #3d3d3d;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            overflow: hidden;
+
+            img {
+                width: 50%;
+                height: 100%;
+                display: block;
+                margin: auto;
+            }
+
+            img:hover {
+                -webkit-animation: scale-up-center 1s ease-in-out both;
+                animation: scale-up-center 1s ease-in-out both;
+            }
+
+        }
+
+        .text_cont {
+            /* border: #000000 solid 3px; */
+            height: 90px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 60px;
+            padding-top: 10px;
+
+            p {
+                color: white;
+            }
+
+            .button_carrito {
+                display: block;
+                margin: auto;
+                width: 100%;
+                height: 40px;
+                margin-top: 5px;
+                border-radius: 4px;
+                background-color: #4b4b4ba5;
+                color: white;
+            }
+
+            .button_carrito:hover {
+                background-color: #4b4b4b;
+                cursor: pointer;
+                transition-duration: 0.3s;
+            }
+
+            .button_carrito:active {
+                background-color: #3d3d3d;
+            }
+
+            a {
+                text-decoration: none;
+
+                h3 {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #publicidad_dos {
+        grid-area: publicidad;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #444444;
+
+        a #imagen_publicidad {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
