@@ -27,9 +27,7 @@ main {
         margin: auto;
 
         h2 {
-            font-family: "Fjalla One", sans-serif;
-            font-weight: 400;
-            font-style: normal;
+            @include font_family;
             font-size: 1.3rem;
             background-color: $color_primario;
             width: 100vw;
@@ -68,10 +66,8 @@ main {
                 margin-left: 15px;
 
                 h3 {
-                    font-family: "Fjalla One", sans-serif;
-                    font-weight: 200;
+                    @include font_family;
                     font-size: 20px;
-                    font-style: normal;
                     margin-left: 15px;
                     color: white;
                     text-decoration: none;

@@ -2,11 +2,10 @@ $color_primario: #000000;
 $color_secundario: rgb(255, 255, 0);
 $color_terciario: #ffff;
 
-@mixin font_family ($font-family, $font-weight, $font-style, $font-size) {
+@mixin font_family {
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.3rem;
 }
 
 @-webkit-keyframes scale-up-center {

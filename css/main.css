@@ -165,9 +165,9 @@ main .productos_lista .content_producto a {
 }
 main .productos_lista .content_producto a h3 {
   font-family: "Fjalla One", sans-serif;
-  font-weight: 200;
-  font-size: 20px;
+  font-weight: 400;
   font-style: normal;
+  font-size: 20px;
   margin-left: 15px;
   color: white;
   text-decoration: none;
@@ -249,6 +249,9 @@ main #CARRUSEL {
   font-weight: 500;
   font-style: normal;
   color: white;
+}
+.container_form div .text_space {
+  width: 250px;
 }
 .container_form div .texto_inline {
   display: inline-block;
@@ -378,6 +381,10 @@ main #CARRUSEL {
   text-decoration: none;
 }
 #contenedor_catalogo .producto_cont .text_cont a h3 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
   color: white;
 }
 #contenedor_catalogo #publicidad_dos {
