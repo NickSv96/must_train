@@ -285,7 +285,6 @@ main #CARRUSEL {
 #contenedor_catalogo #form_catalogo {
   grid-area: nav;
   background-color: rgba(0, 0, 0, 0.6196078431);
-  padding-top: 5px;
 }
 #contenedor_catalogo #form_catalogo ul {
   display: inline-block;
@@ -293,6 +292,9 @@ main #CARRUSEL {
 }
 #contenedor_catalogo #form_catalogo ul .cont_form_cat {
   height: 60px;
+}
+#contenedor_catalogo #form_catalogo ul .cont_form_cat #search_input_cat {
+  margin-top: 12px;
 }
 #contenedor_catalogo #form_catalogo ul .cont_form_cat input {
   width: 90%;
@@ -553,6 +555,9 @@ footer #info div .logos_redes svg:hover {
     width: 100vw;
     padding-top: 6px;
     text-align: center;
+  }
+  body main #contenedor_catalogo #form_catalogo ul .cont_form_cat #search_input_cat {
+    margin-top: 0px;
   }
   body main #contenedor_catalogo .producto_cont {
     height: 220px;

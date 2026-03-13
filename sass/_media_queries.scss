@@ -200,6 +200,14 @@
                     width: 100vw;
                     padding-top: 6px;
                     text-align: center;
+
+                    ul {
+                        .cont_form_cat {
+                            #search_input_cat {
+                                margin-top: 0px;
+                            }
+                        }
+                    }
                 }
 
                 .producto_cont {

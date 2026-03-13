@@ -14,7 +14,6 @@
     #form_catalogo {
         grid-area: nav;
         background-color: #0000009e;
-        padding-top: 5px;
 
         ul {
             display: inline-block;
@@ -22,6 +21,10 @@
 
             .cont_form_cat {
                 height: 60px;
+
+                #search_input_cat {
+                    margin-top: 12px;
+                }
             }
 
             .cont_form_cat input {
