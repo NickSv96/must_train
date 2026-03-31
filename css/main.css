@@ -435,7 +435,7 @@ footer #info div .logos_redes svg:hover {
   body header section div a .logo_head {
     width: 67px;
   }
-  body header section div .logo_deco h1:hover {
+  body header section div #logo_deco h1:hover {
     color: white;
     transition-duration: 0ms;
   }
@@ -583,6 +583,99 @@ footer #info div .logos_redes svg:hover {
     margin-top: 50px;
   }
   body main #contenedor_catalogo #publicidad_dos {
+    display: none;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  body header section {
+    height: 65px;
+    display: flex;
+  }
+  body header section div a .logo_head {
+    width: 67px;
+  }
+  body header section div #logo_deco h1 {
+    width: 100px;
+    margin-top: 20px;
+  }
+  body header section div #logo_deco h1:hover {
+    color: white;
+    transition-duration: 0ms;
+  }
+  body header section nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 70%;
+    border: greenyellow 1px solid;
+  }
+  body header section nav .header_cont_uno {
+    width: 40%;
+    height: 50px;
+    padding-left: 10px;
+    border: 1px solid yellowgreen;
+  }
+  body header section nav .header_cont_uno li #search_input {
+    display: none;
+  }
+  body header section nav .header_cont_uno li .lupa {
+    display: none;
+  }
+  body header section nav .header_cont_uno .contactanos {
+    display: none;
+  }
+  body header section nav .header_cont_dos {
+    width: 50%;
+    height: 50px;
+    padding-left: 10px;
+  }
+  body main #contenedor_publicidad {
+    width: 100vw;
+  }
+  body main #contenedor_publicidad a #publicidad {
+    width: 100vw;
+  }
+  body main .productos_lista {
+    display: none;
+  }
+  body main #CARRUSEL {
+    display: flex;
+  }
+  body main #CARRUSEL div div div .content_producto_carrusel {
+    width: 100vw;
+    height: 500px;
+  }
+  body main #CARRUSEL div div div .content_producto_carrusel figure {
+    height: 325px;
+    background-image: url(../img/background_fit.png);
+    width: 100%;
+    border-radius: 0%;
+  }
+  body main #CARRUSEL div div div .content_producto_carrusel figure img {
+    width: 60%;
+    height: 100%;
+    display: block;
+    margin: auto;
+  }
+  body main #CARRUSEL div div div .content_producto_carrusel a {
+    text-decoration: none;
+    color: white;
+  }
+  body main #CARRUSEL div div div .content_producto_carrusel a .button_compra_carrusel {
+    width: 200px;
+    border-radius: 5px;
+    background-color: #3d3d3d;
+    height: 30px;
+  }
+  body main #CARRUSEL div div div .content_producto_carrusel p {
+    color: white;
+  }
+}
+@media (min-width: 769px) and (max-width: 912px) {
+  body header section nav .header_cont_uno li #search_input {
+    display: none;
+  }
+  body header section nav .header_cont_uno li .lupa {
     display: none;
   }
 }
